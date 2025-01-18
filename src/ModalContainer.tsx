@@ -5,7 +5,7 @@ import { useClickOutsideHandler } from "./useClickOutsideHandler.ts";
 import type { useModalContainer } from "./useModalContainer.tsx";
 
 type ModalContainerProps = ReturnType<typeof useModalContainer> &
-	ComponentProps<"dialog"> & {
+	Omit<ComponentProps<"dialog">, "open"> & {
 		closeOnOutsideClick?: boolean;
 		container?: Element | DocumentFragment;
 	};
