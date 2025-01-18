@@ -8,6 +8,9 @@
 		"url": "https://github.com/e3m-io/react-modal.git"
 	},
 	"type": "module",
+	"exports": {
+		".": "./src/index.tsx"
+	},
 	"scripts": {
 		"ts-check": "tsc"
 	},
