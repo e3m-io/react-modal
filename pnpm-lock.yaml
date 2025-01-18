@@ -14,9 +14,6 @@ importers:
       react-dom:
         specifier: '>=17'
         version: 19.0.0(react@19.0.0)
-      react-merge-refs:
-        specifier: ^2
-        version: 2.1.1
     devDependencies:
       '@types/react':
         specifier: ^19.0.7
@@ -54,9 +51,6 @@ packages:
     peerDependencies:
       react: ^19.0.0
 
-  react-merge-refs@2.1.1:
-    resolution: {integrity: sha512-jLQXJ/URln51zskhgppGJ2ub7b2WFKGq3cl3NYKtlHoTG+dN2q7EzWrn3hN3EgPsTMvpR9tpq5ijdp7YwFZkag==}
-
   react@19.0.0:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
@@ -87,8 +81,6 @@ snapshots:
     dependencies:
       react: 19.0.0
       scheduler: 0.25.0
-
-  react-merge-refs@2.1.1: {}
 
   react@19.0.0: {}
 

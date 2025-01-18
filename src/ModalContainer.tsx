@@ -1,6 +1,5 @@
 import { useRef, type ComponentProps } from "react";
 import { createPortal } from "react-dom";
-import { mergeRefs } from "react-merge-refs";
 import { useDialogElState } from "./useDialogElState.ts";
 import { useClickOutsideHandler } from "./useClickOutsideHandler.ts";
 import type { useModalContainer } from "./useModalContainer.tsx";
@@ -12,7 +11,7 @@ type ModalContainerProps = ReturnType<typeof useModalContainer> &
 	};
 
 export const ModalContainer = (props: ModalContainerProps) => {
-	const { open, close, isOpen, closeOnOutsideClick, container, ref, ...rest } =
+	const { open, close, isOpen, closeOnOutsideClick, container, ...rest } =
 		props;
 
 	const dialogElRef = useRef<HTMLDialogElement>(null);
@@ -30,7 +29,7 @@ export const ModalContainer = (props: ModalContainerProps) => {
 	}
 
 	return createPortal(
-		<dialog {...rest} ref={mergeRefs([dialogElRef, ref])} />,
+		<dialog {...rest} ref={dialogElRef} />,
 		container || window.document.body,
 	);
 };
