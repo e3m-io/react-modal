@@ -1,0 +1,28 @@
+{
+	"name": "@e3m-io/react-modal",
+	"version": "1.0.0",
+	"author": "e3m-io",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/e3m-io/react-modal.git"
+	},
+	"type": "module",
+	"scripts": {
+		"ts-check": "tsc"
+	},
+	"dependencies": {
+		"react-merge-refs": "^2"
+	},
+	"peerDependencies": {
+		"react": ">=17",
+		"react-dom": ">=17"
+	},
+	"devDependencies": {
+		"@types/react": "^19.0.7",
+		"@types/react-dom": "^19.0.3",
+		"prettier": "^3.4.2",
+		"typescript": "^5.7.3"
+	},
+	"packageManager": "pnpm@10.0.0"
+}
